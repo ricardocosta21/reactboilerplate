@@ -19,7 +19,7 @@ export default defineMessages({
   },
   trymeHeader: {
     id: `${scope}.tryme.header`,
-    defaultMessage: 'Try me!',
+    defaultMessage: 'Try me!!!!!',
   },
   trymeMessage: {
     id: `${scope}.tryme.message`,
