@@ -17,6 +17,7 @@ export default class ItemsPage extends React.Component {
     this.state = {
       id: '',
       name: '',
+      
     };
 
     this.handleChange = this.handleIdChange.bind(this);
