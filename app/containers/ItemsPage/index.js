@@ -22,7 +22,7 @@ export default class ItemsPage extends React.Component {
     this.handleChange = this.handleIdChange.bind(this);
     this.handleChange = this.handleNameChange.bind(this);
     this.handleChange = this.handleNewNameChange.bind(this);
-    
+
     this.handlePost = this.handlePost.bind(this);
     this.handleGetAll = this.handleGetAll.bind(this);
     this.handlePut = this.handlePut.bind(this);
@@ -89,7 +89,8 @@ export default class ItemsPage extends React.Component {
   // Put Message
   handlePut(e) {
     fetch(
-      'http://ec2-18-222-140-190.us-east-2.compute.amazonaws.com:8888/api/categories',
+      'http://ec2-18-222-140-190.us-east-2.compute.amazonaws.com:8888/api/categories?newName=' +
+        this.state.newName,
       {
         method: 'PUT',
         headers: {
