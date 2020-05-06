@@ -62,7 +62,7 @@ export default class ItemsPage extends React.Component {
         this.setState({ contacts: data });
       })
       .catch(console.log);
-
+   // added debug message
     e.preventDefault();
   }
 
